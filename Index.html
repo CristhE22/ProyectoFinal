@@ -1,53 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAG_AVANCE</title>
-</head>
-<body>
-    
-</body>
-</html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
     <style>
-        body {
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+        }
+
+        header {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #EDE2E2;
+            background-color: #EFF5FB;
+;
         }
-        header {
-            background-color: #BB0909;
+        .nav {
+            background-color: #000000;
             color: #fff;
-            text-align: center;
-            padding: 30px;
-            margin: 50px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px;
+            
         }
 
-        
+        .nav2{
+            background-color: #000000;
+            color: #fff;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu li{
+            list-style-type: none;
+            margin: 4px;
+
+        }
+        .menu li a{
+            color: #fff;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 5px 5px;
+            text-decoration: none;
+
+        }
+        .menu li a:hover{
+            background: #fff;
+            color: #000;
+            padding: 5px 5px;
+
+        }
+
+        .vertical-line {
+            border-left: 1px solid #fff; /* Cambia el color y el grosor según tus preferencias */
+            height: 20px; /* Cambia la altura según tus necesidades */
+            margin: 0px 20px; /* Ajusta el margen izquierdo y derecho para controlar la posición */
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .btnC{
+            background-color: #000;
+            padding: 7px 16px;
+            width: 180px;
+            border-radius: 10px;
+            border: 2px solid #fff;
+            margin: 4px 4px; 
+            
+        }
+        .btnC:hover{
+            background-color: #fff;
+            
+        }
+        .barra-blanca {
+            background-color: #EFF5FB; /* Color blanco */
+            height: 150px; /* Altura de la barra en píxeles */
+            
+        }
+        .btnCarr{
+            background-color: #EFF5FB;
+            padding: 30px 94px;
+            width: 180px;
+            border: transparent;
+            margin: 0px 0px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;     
+            
+        }
+        .btnCarr:hover{
+            background-color: #000000;
+            color: #EFF5FB;
+            
+        }
+        .Otra_linea {
+            border-left: 1px solid #E6E6E6; /* Cambia el color y el grosor según tus preferencias */
+            height: 50px; /* Cambia la altura según tus necesidades */
+            margin: 0px 0px; /* Ajusta el margen izquierdo y derecho para controlar la posición */
+        }
     </style>
 
 </head>
 <body>
     <header>
-        <h1>NOTICIAS UTP</h1>
+        <nav class="nav" >
+            <table border="0">
+                <tr>
+                    <td ><img src="Logo.png" width="15%"></td>
+                    <td><ul class="menu"> 
+                        <li><a href="https://canvas.utp.edu.pe/login/canvas">CANVAS</a></li>
+                        <div class="vertical-line"></div>
+                        <li><a href="https://portalestudiante.utp.edu.pe/Home/LoginUTP?ReturnUrl=%2fHome%2fIndexUTP">PORTAL DEL ESTUDIANTE</a></li>
+                        <div class="vertical-line"></div>
+                        <li><a href="https://tubiblioteca.utp.edu.pe/">BIBLIOTECA</a></li>
+                        </ul>
+                    </td>
+                        <td><br/></td>
+                    <td>
+                        <div class="container">
+                            <button class="btnC"><a href="https://www.utp.edu.pe/nosotros" ><h1>CONOCENOS</h1></a></button>
+                           
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </nav>
     </header>
-
-
+    <img src="PRINCIPAL.png" alt height="100%" width="100%" >
+    <header>
+        <div class="barra-blanca" >
+            <table border="0">
+                <tr>
+                    <td><button class="btnCarr" ><img src="Sistemas.png" alt height="50" width="50">ING. DE SISTEMAS</button></td>
+                    <td><div class="Otra_linea"></div></td>
+                    <td><button class="btnCarr" ><img src="Sistemas.png" alt height="50" width="50">ING. CIVIL</button></td>
+                    <td><div class="Otra_linea"></div></td>
+                    <td><button class="btnCarr" ><img src="Sistemas.png" alt height="50" width="50">ING. INDUSTRIAL</button></td>
+                    <td><div class="Otra_linea"></div></td>
+                    <td><button class="btnCarr" ><img src="Sistemas.png" alt height="50" width="50">ING. DE SOFTWARE</button></td>
+                    <td><div class="Otra_linea"></div></td>
+                    <td><button class="btnCarr" ><img src="Sistemas.png" alt height="50" width="50">ING. ELECTRONICA</button></td>
+                    <td><div class="Otra_linea"></div></td>
+                    <td><button class="btnCarr" ><img src="Sistemas.png" alt height="50" width="50">ING. MECANICA</button></td>
+                    <td><div class="Otra_linea"></div></td>
+                    <td><button class="btnCarr" ><img src="Sistemas.png" alt height="55" width="55">ARQUITECTURA</button></td>
+                </tr>
+            </table>
+        </div>
+    </header>
 </body>
 </html>
